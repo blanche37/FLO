@@ -16,6 +16,7 @@
 		432C0D7827DBC6F20024A667 /* FLOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D7727DBC6F20024A667 /* FLOTests.swift */; };
 		432C0D8227DBC6F20024A667 /* FLOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D8127DBC6F20024A667 /* FLOUITests.swift */; };
 		432C0D8427DBC6F20024A667 /* FLOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D8327DBC6F20024A667 /* FLOUITestsLaunchTests.swift */; };
+		432C0D9127DBCEAF0024A667 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9027DBCEAF0024A667 /* Music.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		432C0D7D27DBC6F20024A667 /* FLOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		432C0D8127DBC6F20024A667 /* FLOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLOUITests.swift; sourceTree = "<group>"; };
 		432C0D8327DBC6F20024A667 /* FLOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLOUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		432C0D9027DBCEAF0024A667 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				432C0D6027DBC6F10024A667 /* AppDelegate.swift */,
 				432C0D6227DBC6F10024A667 /* SceneDelegate.swift */,
 				432C0D6427DBC6F10024A667 /* ViewController.swift */,
+				432C0D9027DBCEAF0024A667 /* Music.swift */,
 				432C0D6627DBC6F10024A667 /* Main.storyboard */,
 				432C0D6927DBC6F20024A667 /* Assets.xcassets */,
 				432C0D6B27DBC6F20024A667 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				432C0D6527DBC6F10024A667 /* ViewController.swift in Sources */,
 				432C0D6127DBC6F10024A667 /* AppDelegate.swift in Sources */,
 				432C0D6327DBC6F10024A667 /* SceneDelegate.swift in Sources */,
+				432C0D9127DBCEAF0024A667 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +451,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +480,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
