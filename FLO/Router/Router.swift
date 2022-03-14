@@ -14,6 +14,6 @@ protocol NetworkRouter {
     func cancel()
 }
 
-struct Router: NetworkRouter {
+class Router: NetworkRouter {
     
 }
