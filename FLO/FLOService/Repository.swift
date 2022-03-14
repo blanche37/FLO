@@ -32,14 +32,14 @@ struct NetworkRepository: Repository {
     }
     
     private func convert(_ data: Data) -> Music {
-        var music: Music!
+        var music: Music?
         
         do {
             music = try JSONDecoder().decode(Music.self, from: data)
         } catch {
             print(error)
         }
-        return music
+        return music!
     }
 }
 
