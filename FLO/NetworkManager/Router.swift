@@ -17,5 +17,5 @@ protocol NetworkRouter {
 }
 
 struct Router: NetworkRouter {
- 
+    
 }
