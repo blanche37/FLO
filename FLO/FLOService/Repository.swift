@@ -14,13 +14,18 @@ protocol Repository {
 
 class NetworkRepository: Repository {
     
-    private let baseURL = "https://grepp-programmers-challenges.s3.ap-northeast-2.amazonaws.com/2020-flo/song.json"
+    private let baseURL = URL(string: "https://grepp-programmers-challenges.s3.ap-northeast-2.amazonaws.com/2020-flo/song.json")
     
     func read(completion: @escaping (Music) -> ()) {
-        Router.shared.request(url: URL(string: baseURL)!) { data in
+        guard let url = baseURL else {
+            return
+        }
+        
+        Router.shared.request(url: url) { data in
             let music = self.convert(data)
             completion(music)
         }
+
     }
     
     private func convert(_ data: Data) -> Music {
