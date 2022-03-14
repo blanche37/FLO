@@ -19,7 +19,7 @@
 		432C0D9127DBCEAF0024A667 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9027DBCEAF0024A667 /* Music.swift */; };
 		432C0D9927DBDD2F0024A667 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9827DBDD2F0024A667 /* Repository.swift */; };
 		432C0D9B27DBE4FA0024A667 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9A27DBE4FA0024A667 /* Service.swift */; };
-		439690D727DF2D02001A8626 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439690D627DF2D02001A8626 /* NetworkManager.swift */; };
+		439690D727DF2D02001A8626 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439690D627DF2D02001A8626 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		432C0D9027DBCEAF0024A667 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		432C0D9827DBDD2F0024A667 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		432C0D9A27DBE4FA0024A667 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		439690D627DF2D02001A8626 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		439690D627DF2D02001A8626 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,7 @@
 		439690D527DF2CDF001A8626 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				439690D627DF2D02001A8626 /* NetworkManager.swift */,
+				439690D627DF2D02001A8626 /* Router.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 				432C0D6527DBC6F10024A667 /* ViewController.swift in Sources */,
 				432C0D6127DBC6F10024A667 /* AppDelegate.swift in Sources */,
 				432C0D6327DBC6F10024A667 /* SceneDelegate.swift in Sources */,
-				439690D727DF2D02001A8626 /* NetworkManager.swift in Sources */,
+				439690D727DF2D02001A8626 /* Router.swift in Sources */,
 				432C0D9127DBCEAF0024A667 /* Music.swift in Sources */,
 				432C0D9927DBDD2F0024A667 /* Repository.swift in Sources */,
 				432C0D9B27DBE4FA0024A667 /* Service.swift in Sources */,
