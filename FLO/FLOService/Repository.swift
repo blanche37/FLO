@@ -17,19 +17,10 @@ class NetworkRepository: Repository {
     private let baseURL = "https://grepp-programmers-challenges.s3.ap-northeast-2.amazonaws.com/2020-flo/song.json"
     
     func read(completion: @escaping (Music) -> ()) {
-        URLSession.shared.dataTask(with: URL(string: baseURL)!) { data, response, error in
-            guard error == nil else {
-                return
-            }
-            
-            guard let data = data,
-                  let response = response as? HTTPURLResponse,
-                  (200..<300).contains(response.statusCode) else {
-                      return
-                  }
-            completion(self.convert(data))
-            
-        }.resume()
+        Router.shared.request(url: URL(string: baseURL)!) { data in
+            let music = self.convert(data)
+            completion(music)
+        }
     }
     
     private func convert(_ data: Data) -> Music {
