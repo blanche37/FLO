@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				432C0D5F27DBC6F10024A667 /* FLO */,
-				439690D527DF2CDF001A8626 /* NetworkManager */,
+				439690D527DF2CDF001A8626 /* Router */,
 				432C0D9727DBDB990024A667 /* FLOService */,
 				432C0D7627DBC6F20024A667 /* FLOTests */,
 				432C0D8027DBC6F20024A667 /* FLOUITests */,
@@ -147,12 +147,12 @@
 			path = FLOService;
 			sourceTree = "<group>";
 		};
-		439690D527DF2CDF001A8626 /* NetworkManager */ = {
+		439690D527DF2CDF001A8626 /* Router */ = {
 			isa = PBXGroup;
 			children = (
 				439690D627DF2D02001A8626 /* Router.swift */,
 			);
-			path = NetworkManager;
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
