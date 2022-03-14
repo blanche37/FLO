@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Service {
+protocol Service { 
     func read(completion: @escaping (Music) -> ())
 }
 

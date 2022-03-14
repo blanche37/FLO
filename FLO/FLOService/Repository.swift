@@ -9,6 +9,7 @@ import Foundation
 
 protocol Repository {
     func read(completion: @escaping (Music) -> ())
+    // TODO: - create, update, delete
 }
 
 class NetworkRepository: Repository {
