@@ -13,6 +13,8 @@ protocol NetworkRouter {
 }
 
 class Router: NetworkRouter {
+    static let shared = Router()
+    
     private var task: URLSessionTask?
     
     func request(url: URL, completion: @escaping (Data) -> ()) {
