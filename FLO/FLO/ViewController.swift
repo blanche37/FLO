@@ -29,11 +29,7 @@ class ViewController: UIViewController {
             return
         }
         
-        viewModel.getMusic(url: baseURL) { music in
-            self.viewModel.setMusic(music: music)
-        }
-        
-        viewModel.getMusic(url: baseURL) { music in
+        viewModel.requestMusic(url: baseURL) { music in
             self.viewModel.setMusic(music: music)
             self.bind()
         }
@@ -41,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     private func bind() {
-        viewModel.music1.bind { [weak self] music in
+        viewModel.getMusic.bind { [weak self] music in
             guard let self = self else {
                 return
             }
