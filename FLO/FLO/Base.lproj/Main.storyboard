@@ -141,6 +141,20 @@
                             <constraint firstItem="kmI-yj-dQd" firstAttribute="top" secondItem="4d8-3W-t7c" secondAttribute="bottom" constant="30" id="vmn-PI-fln"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="kmI-yj-dQd" id="uAc-X5-kEQ"/>
+                        <outlet property="albumLabel" destination="4d8-3W-t7c" id="fU4-6i-dur"/>
+                        <outlet property="forwordButton" destination="EiR-nQ-Sbe" id="J3v-6y-tES"/>
+                        <outlet property="heartButton" destination="gRk-dI-Ct5" id="Vyk-1F-Azh"/>
+                        <outlet property="lyricsLabel" destination="wEv-jg-4HI" id="iqq-WH-rCM"/>
+                        <outlet property="musicTitleLabel" destination="X23-Yy-LjV" id="a6c-iv-gpD"/>
+                        <outlet property="muteButton" destination="EiR-nQ-Sbe" id="SDf-sU-eJK"/>
+                        <outlet property="playButton" destination="mBc-82-KIF" id="68y-EQ-v30"/>
+                        <outlet property="progressSlider" destination="sRS-T6-bkH" id="BMl-dm-ixc"/>
+                        <outlet property="repeatButton" destination="eI1-a5-g3t" id="X6k-fk-fYB"/>
+                        <outlet property="rewindButton" destination="1Gf-q6-t88" id="UPc-RW-vCL"/>
+                        <outlet property="singerLabel" destination="aIt-uk-Ieq" id="ldX-LM-sgL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
