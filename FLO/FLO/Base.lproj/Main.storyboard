@@ -43,16 +43,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="252" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-6t-asO">
-                                <rect key="frame" x="51" y="651.5" width="312" height="20.5"/>
+                                <rect key="frame" x="47.5" y="651.5" width="319.5" height="20.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7R-pw-EaL">
-                                        <rect key="frame" x="0.0" y="0.0" width="28" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7R-pw-EaL">
+                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxx-7l-10Q">
-                                        <rect key="frame" x="280" y="0.0" width="32" height="20.5"/>
+                                        <rect key="frame" x="287.5" y="0.0" width="32" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -148,6 +148,7 @@
                     <connections>
                         <outlet property="albumImageView" destination="kmI-yj-dQd" id="uAc-X5-kEQ"/>
                         <outlet property="albumLabel" destination="4d8-3W-t7c" id="fU4-6i-dur"/>
+                        <outlet property="durationLabel" destination="yxx-7l-10Q" id="YkN-Lg-OCC"/>
                         <outlet property="forwordButton" destination="EiR-nQ-Sbe" id="J3v-6y-tES"/>
                         <outlet property="heartButton" destination="gRk-dI-Ct5" id="Vyk-1F-Azh"/>
                         <outlet property="lyricsLabel" destination="wEv-jg-4HI" id="iqq-WH-rCM"/>

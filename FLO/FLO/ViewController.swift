@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var muteButton: UIButton!
     @IBOutlet weak var repeatButton: UIButton!
     @IBOutlet weak var heartButton: UIButton!
+    @IBOutlet weak var durationLabel: UILabel!
     
     var viewModel: ViewModel!
     
