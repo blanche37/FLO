@@ -78,10 +78,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchUpRepeatButton(_ sender: UIButton) {
-        switch repeatButton.alpha {
-        case 1.0:
+        if repeatButton.alpha == 1.0 {
             repeatButton.alpha = 0.4
-        default:
+        } else {
             repeatButton.alpha = 1.0
         }
     }
