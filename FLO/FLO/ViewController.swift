@@ -30,7 +30,11 @@ class ViewController: UIViewController {
             return
         }
         
-        viewModel.requestMusic(url: baseURL) { music in
+        viewModel.requestMusic(url: baseURL) { [weak self] music in
+            guard let self = self else {
+                return
+            }
+            
             self.viewModel.setMusic(music: music)
             self.bind()
         }
@@ -43,12 +47,20 @@ class ViewController: UIViewController {
                 return
             }
             
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                
                 self.albumLabel.text = music.album
                 self.musicTitleLabel.text = music.title
                 self.singerLabel.text = music.singer
                 self.durationLabel.text = self.viewModel.getTime(from: music.duration)
-                Router.shared.request(url: URL(string: music.image)!, completion: { data in
+                Router.shared.request(url: URL(string: music.image)!, completion: { [weak self] data in
+                    guard let self = self else {
+                        return
+                    }
+        
                     self.viewModel.getMusicImage(data: data) { image in
                         DispatchQueue.main.async {
                             self.albumImageView.image = image
