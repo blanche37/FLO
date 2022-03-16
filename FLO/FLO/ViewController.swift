@@ -12,7 +12,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        guard let baseURL = URL(string: "https://grepp-programmers-challenges.s3.ap-northeast-2.amazonaws.com/2020-flo/song.json") else {
+            return
+        }
+        
+        viewModel.getMusic(url: baseURL) { music in
+            self.viewModel.setMusic(music: music)
+        }
     }
 
 
