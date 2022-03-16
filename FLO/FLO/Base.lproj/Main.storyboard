@@ -84,7 +84,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gf-q6-t88">
                                         <rect key="frame" x="67.5" y="0.0" width="57.5" height="49.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system">
+                                        <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system" title=" ">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
                                     </button>
@@ -98,7 +98,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aun-1P-QEh">
                                         <rect key="frame" x="203" y="0.0" width="57.5" height="49.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system">
+                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system" title=" ">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
                                     </button>
@@ -114,7 +114,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRk-dI-Ct5">
                                 <rect key="frame" x="312" y="487.5" width="55" height="38"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="suit.heart" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="suit.heart" catalog="system" title="]">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                 </buttonConfiguration>
                             </button>
