@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func play(_ sender: UIButton) {
+    @IBAction func touchUpPlayButton(_ sender: UIButton) {
         MusicPlayer.shared.play(button: playButton)
     }
     
