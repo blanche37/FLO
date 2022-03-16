@@ -8,62 +8,67 @@
 import Foundation
 
 protocol ViewModel {
-    func getMusic(url: URL, completion: @escaping (Music) -> ())
-    func setMusic(music: Music)
+    func getMusic(url: URL, completion: @escaping (Observable<Music>) -> ())
+    func setMusic(music: Observable<Music>)
     
-    var singer: String { get }
-    var album: String { get }
-    var title: String { get }
-    var duration: Int { get }
-    var image: String { get }
-    var file: String { get }
-    var lyrics: String { get }
+    var music1: Observable<Music> { get }
+//    var singer: String { get }
+//    var album: String { get }
+//    var title: String { get }
+//    var duration: Int { get }
+//    var image: String { get }
+//    var file: String { get }
+//    var lyrics: String { get }
 }
 
 class FLOViewModel: ViewModel {
     private var service: Service!
-    private var music: Music = Music(singer: "", album: "", title: "", duration: 0, image: "", file: "", lyrics: "")
+    var music = Observable<Music>(Music(singer: "", album: "", title: "", duration: 0, image: "", file: "", lyrics: ""))
     
-    var singer: String {
-        return music.singer
+    var music1: Observable<Music> {
+        return music
     }
+//    var singer: String {
+//        return music.singer
+//    }
+//
+//    var album: String {
+//        return music.album
+//    }
+//
+//    var title: String {
+//        return music.title
+//    }
+//
+//    var duration: Int {
+//        return music.duration
+//    }
+//
+//    var image: String {
+//        return music.image
+//    }
+//
+//    var file: String {
+//        return music.file
+//    }
+//
+//    var lyrics: String {
+//        return music.lyrics
+//    }
     
-    var album: String {
-        return music.album
-    }
-    
-    var title: String {
-        return music.title
-    }
-    
-    var duration: Int {
-        return music.duration
-    }
-    
-    var image: String {
-        return music.image
-    }
-    
-    var file: String {
-        return music.file
-    }
-    
-    var lyrics: String {
-        return music.lyrics
-    }
-    
-    func getMusic(url: URL, completion: @escaping (Music) -> ()) {
+                
+    func getMusic(url: URL, completion: @escaping (Observable<Music>) -> ()) {
         Router.shared.request(url: url) { data in
             do {
                 let music = try JSONDecoder().decode(Music.self, from: data)
-                completion(music)
+                completion(Observable<Music>(music))
             } catch {
                 print("decodingError")
             }
         }
     }
     
-    func setMusic(music: Music) {
+    func setMusic(music: Observable<Music>) {
         self.music = music
     }
     
