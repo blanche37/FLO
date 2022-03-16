@@ -47,12 +47,10 @@ class ViewController: UIViewController {
                 self.musicTitleLabel.text = music.title
                 self.singerLabel.text = music.singer
                 Router.shared.request(url: URL(string: music.image)!, completion: { data in
-                    guard let image = UIImage(data: data) else {
-                        return
-                    }
-                    
-                    DispatchQueue.main.async {
-                        self.albumImageView.image = image
+                    self.viewModel.getMusicImage(data: data) { image in
+                        DispatchQueue.main.async {
+                            self.albumImageView.image = image
+                        }
                     }
                 })
             }

@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ViewModel {
+    var getMusic: Observable<Music> { get }
+    
     func requestMusic(url: URL, completion: @escaping (Observable<Music>) -> ())
     func setMusic(music: Observable<Music>)
-    
-    var getMusic: Observable<Music> { get }
+    func getMusicImage(data: Data, completion: @escaping (UIImage) -> ())
 }
 
 class FLOViewModel: ViewModel {
@@ -22,7 +24,14 @@ class FLOViewModel: ViewModel {
         return music
     }
 
-    
+    func getMusicImage(data: Data, completion: @escaping (UIImage) -> ()) {
+        DispatchQueue.global().async {
+            guard let image = UIImage(data: data) else {
+                return
+            }
+            completion(image)
+        }
+    }
                 
     func requestMusic(url: URL, completion: @escaping (Observable<Music>) -> ()) {
         Router.shared.request(url: url) { data in
