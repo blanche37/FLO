@@ -72,7 +72,18 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    @IBAction func play(_ sender: UIButton) {
+        MusicPlayer.shared.isPlaying.toggle()
+        if MusicPlayer.shared.isPlaying {
+            playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+            MusicPlayer.shared.player.play()
+        } else {
+            playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            MusicPlayer.shared.player.pause()
+        }
+    }
+    
 
 }
 
