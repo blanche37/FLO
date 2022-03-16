@@ -5,7 +5,6 @@
 //  Created by yun on 2022/03/16.
 //
 
-import Foundation
 import UIKit
 
 protocol ViewModel {
