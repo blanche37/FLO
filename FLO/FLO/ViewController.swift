@@ -32,6 +32,15 @@ class ViewController: UIViewController {
         viewModel.getMusic(url: baseURL) { music in
             self.viewModel.setMusic(music: music)
         }
+        
+        viewModel.getMusic(url: baseURL) { music in
+            self.viewModel.setMusic(music: music)
+            DispatchQueue.main.async {
+                self.albumLabel.text = self.viewModel.album
+                self.musicTitleLabel.text = self.viewModel.title
+                self.singerLabel.text = self.viewModel.singer
+            }
+        }
     }
 
 
