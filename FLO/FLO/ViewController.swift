@@ -86,5 +86,12 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func touchUpHeartButton(_ sender: UIButton) {
+        if heartButton.imageView?.image == UIImage(systemName: "suit.heart") {
+            heartButton.setImage(UIImage(systemName: "suit.heart.fill"), for: .normal)
+        } else {
+            heartButton.setImage(UIImage(systemName: "suit.heart"), for: .normal)
+        }
+    }
 }
 
