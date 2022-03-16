@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var albumLabel: UILabel!
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
                 self.musicTitleLabel.text = music.title
                 self.singerLabel.text = music.singer
                 self.durationLabel.text = self.viewModel.getTime(from: music.duration)
+                MusicPlayer.shared.player.replaceCurrentItem(with: AVPlayerItem(url: URL(string: music.file)!))
                 Router.shared.request(url: URL(string: music.image)!, completion: { [weak self] data in
                     guard let self = self else {
                         return
