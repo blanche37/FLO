@@ -77,6 +77,14 @@ class ViewController: UIViewController {
         MusicPlayer.shared.play(button: playButton)
     }
     
-
+    @IBAction func touchUpRepeatButton(_ sender: UIButton) {
+        switch repeatButton.alpha {
+        case 1.0:
+            repeatButton.alpha = 0.4
+        default:
+            repeatButton.alpha = 1.0
+        }
+    }
+    
 }
 
