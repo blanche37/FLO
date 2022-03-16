@@ -8,6 +8,18 @@
 import Foundation
 
 protocol ViewModel {
-    func getMusic() -> Music
     func getDuration(url: URL, completion: @escaping (Int) -> ())
+}
+
+class FLOViewModel: ViewModel {
+    func getDuration(url: URL, completion: @escaping (Int) -> ()) {
+        Router.shared.request(url: url) { data in
+            do {
+                let music = try JSONDecoder().decode(Music.self, from: data)
+                completion(music.duration)
+            } catch {
+                fatalError("decodingError")
+            }
+        }
+    }
 }
