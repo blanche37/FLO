@@ -13,6 +13,7 @@ protocol ViewModel {
     func requestMusic(url: URL, completion: @escaping (Observable<Music>) -> ())
     func setMusic(music: Observable<Music>)
     func getMusicImage(data: Data, completion: @escaping (UIImage) -> ())
+    func getTime(from duration: Int) -> String
 }
 
 class FLOViewModel: ViewModel {
@@ -41,6 +42,13 @@ class FLOViewModel: ViewModel {
                 print("decodingError")
             }
         }
+    }
+    
+    func getTime(from duration: Int) -> String{
+        let minute = duration / 60
+        let second = duration % 60
+        
+        return "\(minute):\(second)"
     }
     
     func setMusic(music: Observable<Music>) {

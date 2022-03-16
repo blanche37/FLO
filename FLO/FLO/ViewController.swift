@@ -47,6 +47,7 @@ class ViewController: UIViewController {
                 self.albumLabel.text = music.album
                 self.musicTitleLabel.text = music.title
                 self.singerLabel.text = music.singer
+                self.durationLabel.text = self.viewModel.getTime(from: music.duration)
                 Router.shared.request(url: URL(string: music.image)!, completion: { data in
                     self.viewModel.getMusicImage(data: data) { image in
                         DispatchQueue.main.async {
