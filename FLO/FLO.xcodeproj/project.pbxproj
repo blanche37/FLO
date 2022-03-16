@@ -19,6 +19,7 @@
 		432C0D9127DBCEAF0024A667 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9027DBCEAF0024A667 /* Music.swift */; };
 		432C0D9927DBDD2F0024A667 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9827DBDD2F0024A667 /* Repository.swift */; };
 		432C0D9B27DBE4FA0024A667 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9A27DBE4FA0024A667 /* Service.swift */; };
+		438FBA7727E1BFC7006989E7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FBA7627E1BFC7006989E7 /* ViewModel.swift */; };
 		439690D727DF2D02001A8626 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439690D627DF2D02001A8626 /* Router.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		432C0D9027DBCEAF0024A667 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		432C0D9827DBDD2F0024A667 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		432C0D9A27DBE4FA0024A667 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		438FBA7627E1BFC7006989E7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		439690D627DF2D02001A8626 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				432C0D6027DBC6F10024A667 /* AppDelegate.swift */,
 				432C0D6227DBC6F10024A667 /* SceneDelegate.swift */,
 				432C0D6427DBC6F10024A667 /* ViewController.swift */,
+				438FBA7627E1BFC7006989E7 /* ViewModel.swift */,
 				432C0D6627DBC6F10024A667 /* Main.storyboard */,
 				432C0D6927DBC6F20024A667 /* Assets.xcassets */,
 				432C0D6B27DBC6F20024A667 /* LaunchScreen.storyboard */,
@@ -292,6 +295,7 @@
 				439690D727DF2D02001A8626 /* Router.swift in Sources */,
 				432C0D9127DBCEAF0024A667 /* Music.swift in Sources */,
 				432C0D9927DBDD2F0024A667 /* Repository.swift in Sources */,
+				438FBA7727E1BFC7006989E7 /* ViewModel.swift in Sources */,
 				432C0D9B27DBE4FA0024A667 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
