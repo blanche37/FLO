@@ -12,6 +12,8 @@ protocol ViewModel {
 }
 
 class FLOViewModel: ViewModel {
+    var service: Service!
+    
     func getDuration(url: URL, completion: @escaping (Int) -> ()) {
         Router.shared.request(url: url) { data in
             do {
@@ -21,5 +23,9 @@ class FLOViewModel: ViewModel {
                 fatalError("decodingError")
             }
         }
+    }
+    
+    init(service: Service) {
+        self.service = service
     }
 }

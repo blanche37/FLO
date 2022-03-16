@@ -17,4 +17,8 @@ class FLOService: Service {
     func read(completion: @escaping (Music) -> ()) {
         repository.read(completion: completion)
     }
+    
+    init(repository: Repository) {
+        self.repository = repository
+    }
 }
