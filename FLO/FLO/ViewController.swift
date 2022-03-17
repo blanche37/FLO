@@ -7,11 +7,12 @@
 
 import UIKit
 import AVFoundation
+import MarqueeLabel
 
 class ViewController: UIViewController {
     @IBOutlet weak var albumLabel: UILabel!
     @IBOutlet weak var albumImageView: UIImageView!
-    @IBOutlet weak var musicTitleLabel: UILabel!
+    @IBOutlet weak var musicTitleLabel: MarqueeLabel!
     @IBOutlet weak var singerLabel: UILabel!
     @IBOutlet weak var lyricsLabel: UILabel!
     @IBOutlet weak var progressSlider: UISlider!
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.progressSlider.addTarget(self, action: #selector(valueChanged), for: .valueChanged)
         MusicPlayer.shared.addTimeObserver(slider: progressSlider)
         guard let baseURL = URL(string: "https://grepp-programmers-challenges.s3.ap-northeast-2.amazonaws.com/2020-flo/song.json") else {
@@ -54,7 +56,7 @@ class ViewController: UIViewController {
                 guard let self = self else {
                     return
                 }
-                
+                print(self.musicTitleLabel.type)
                 self.albumLabel.text = music.album
                 self.musicTitleLabel.text = music.title
                 self.singerLabel.text = music.singer

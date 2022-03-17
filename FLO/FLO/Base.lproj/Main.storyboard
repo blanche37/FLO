@@ -20,10 +20,10 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sRS-T6-bkH">
                                 <rect key="frame" x="34.5" y="646.5" width="345" height="31"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X23-Yy-LjV">
-                                <rect key="frame" x="107" y="504.5" width="200" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X23-Yy-LjV" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="32" y="504.5" width="350" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="TCk-Mr-Aex"/>
+                                    <constraint firstAttribute="width" constant="350" id="lug-YS-vi1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -126,17 +126,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRk-dI-Ct5">
                                 <rect key="frame" x="335" y="54" width="59" height="38"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="suit.heart" catalog="system" title=" ">
+                                <buttonConfiguration key="configuration" style="plain" image="suit.heart" catalog="system" title=" " titleAlignment="trailing">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="touchUpHeartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkW-8w-DSt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6y-oz-Fwq">
+                                <rect key="frame" x="20" y="54" width="48" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title=" "/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Y6y-oz-Fwq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2uk-TF-8nm"/>
                             <constraint firstItem="aIt-uk-Ieq" firstAttribute="top" secondItem="X23-Yy-LjV" secondAttribute="bottom" constant="5" id="5E8-mI-1iC"/>
                             <constraint firstItem="wEv-jg-4HI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ot-Zs-XaE"/>
                             <constraint firstItem="Fbq-6t-asO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6fQ-DF-csg"/>
@@ -157,6 +163,7 @@
                             <constraint firstItem="2b9-ON-8x5" firstAttribute="top" secondItem="Fbq-6t-asO" secondAttribute="bottom" constant="31" id="ukF-lJ-Mr0"/>
                             <constraint firstItem="X23-Yy-LjV" firstAttribute="top" secondItem="kmI-yj-dQd" secondAttribute="bottom" constant="40" id="vGI-12-4gh"/>
                             <constraint firstItem="kmI-yj-dQd" firstAttribute="top" secondItem="4d8-3W-t7c" secondAttribute="bottom" constant="30" id="vmn-PI-fln"/>
+                            <constraint firstItem="Y6y-oz-Fwq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="z7C-07-TnK"/>
                         </constraints>
                     </view>
                     <connections>
@@ -166,7 +173,7 @@
                         <outlet property="forwordButton" destination="EiR-nQ-Sbe" id="J3v-6y-tES"/>
                         <outlet property="heartButton" destination="gRk-dI-Ct5" id="Vyk-1F-Azh"/>
                         <outlet property="lyricsLabel" destination="wEv-jg-4HI" id="iqq-WH-rCM"/>
-                        <outlet property="musicTitleLabel" destination="X23-Yy-LjV" id="a6c-iv-gpD"/>
+                        <outlet property="musicTitleLabel" destination="X23-Yy-LjV" id="cUE-N4-2aS"/>
                         <outlet property="muteButton" destination="EiR-nQ-Sbe" id="SDf-sU-eJK"/>
                         <outlet property="playButton" destination="mBc-82-KIF" id="68y-EQ-v30"/>
                         <outlet property="progressSlider" destination="sRS-T6-bkH" id="BMl-dm-ixc"/>
@@ -182,6 +189,7 @@
     </scenes>
     <resources>
         <image name="backward.fill" catalog="system" width="128" height="79"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="forward.fill" catalog="system" width="128" height="79"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="repeat" catalog="system" width="128" height="98"/>
