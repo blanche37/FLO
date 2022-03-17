@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.progressSlider.addTarget(self, action: #selector(valueChanged), for: .valueChanged)
         guard let baseURL = URL(string: "https://grepp-programmers-challenges.s3.ap-northeast-2.amazonaws.com/2020-flo/song.json") else {
             return
         }
@@ -57,6 +58,7 @@ class ViewController: UIViewController {
                 self.musicTitleLabel.text = music.title
                 self.singerLabel.text = music.singer
                 self.durationLabel.text = self.viewModel.getTime(from: music.duration)
+                self.progressSlider.maximumValue = Float(music.duration)
                 MusicPlayer.shared.player.replaceCurrentItem(with: AVPlayerItem(url: URL(string: music.file)!))
                 Router.shared.request(url: URL(string: music.image)!, completion: { [weak self] data in
                     guard let self = self else {
@@ -91,6 +93,11 @@ class ViewController: UIViewController {
         } else {
             heartButton.setImage(UIImage(systemName: "suit.heart"), for: .normal)
         }
+    }
+    
+    @objc func valueChanged() {
+        let seekTime = CMTimeMakeWithSeconds(Float64(progressSlider.value), preferredTimescale: 1)
+        MusicPlayer.shared.player.seek(to: seekTime)
     }
 }
 
