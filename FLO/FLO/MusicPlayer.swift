@@ -26,6 +26,14 @@ class MusicPlayer {
         }
     }
     
+    func rewind() {
+        player.seek(to: CMTime(value: 0, timescale: 1))
+    }
+    
+    func fastForward(duration: Int) {
+        player.seek(to: CMTime(value: Int64(duration), timescale: 1))
+    }
+    
     func addTimeObserver(slider: UISlider) {
         let interval = CMTime(seconds: 0.5,
                               preferredTimescale: CMTimeScale(NSEC_PER_SEC))

@@ -88,6 +88,14 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func touchUpRewindButton(_ sender: UIButton) {
+        MusicPlayer.shared.rewind()
+    }
+    
+    @IBAction func touchUpForwordButton(_ sender: UIButton) {
+        MusicPlayer.shared.fastForward(duration: viewModel.getMusic.value.duration)
+    }
+    
     @IBAction func touchUpHeartButton(_ sender: UIButton) {
         if heartButton.imageView?.image == UIImage(systemName: "suit.heart") {
             heartButton.setImage(UIImage(systemName: "suit.heart.fill"), for: .normal)
