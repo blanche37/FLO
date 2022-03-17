@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.progressSlider.addTarget(self, action: #selector(valueChanged), for: .touchDragInside)
+        self.progressSlider.addTarget(self, action: #selector(valueChanged), for: .valueChanged)
         MusicPlayer.shared.addTimeObserver(slider: progressSlider)
         guard let baseURL = URL(string: "https://grepp-programmers-challenges.s3.ap-northeast-2.amazonaws.com/2020-flo/song.json") else {
             return
