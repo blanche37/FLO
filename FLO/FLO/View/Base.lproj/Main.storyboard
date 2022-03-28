@@ -139,11 +139,23 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title=" "/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7e-Xg-sTI" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="aF1-t7-Qdc"/>
+                                    <constraint firstAttribute="height" constant="250" id="aNj-e2-pqT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="heart"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Y6y-oz-Fwq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2uk-TF-8nm"/>
+                            <constraint firstItem="n7e-Xg-sTI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="51V-wY-FIU"/>
                             <constraint firstItem="aIt-uk-Ieq" firstAttribute="top" secondItem="X23-Yy-LjV" secondAttribute="bottom" constant="5" id="5E8-mI-1iC"/>
                             <constraint firstItem="wEv-jg-4HI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ot-Zs-XaE"/>
                             <constraint firstItem="Fbq-6t-asO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6fQ-DF-csg"/>
@@ -164,12 +176,14 @@
                             <constraint firstItem="2b9-ON-8x5" firstAttribute="top" secondItem="Fbq-6t-asO" secondAttribute="bottom" constant="31" id="ukF-lJ-Mr0"/>
                             <constraint firstItem="X23-Yy-LjV" firstAttribute="top" secondItem="kmI-yj-dQd" secondAttribute="bottom" constant="40" id="vGI-12-4gh"/>
                             <constraint firstItem="kmI-yj-dQd" firstAttribute="top" secondItem="4d8-3W-t7c" secondAttribute="bottom" constant="30" id="vmn-PI-fln"/>
+                            <constraint firstItem="n7e-Xg-sTI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x7O-rf-bku"/>
                             <constraint firstItem="Y6y-oz-Fwq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="z7C-07-TnK"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="albumImageView" destination="kmI-yj-dQd" id="uAc-X5-kEQ"/>
                         <outlet property="albumLabel" destination="4d8-3W-t7c" id="fU4-6i-dur"/>
+                        <outlet property="animationView" destination="n7e-Xg-sTI" id="eTa-bT-Ef4"/>
                         <outlet property="durationLabel" destination="yxx-7l-10Q" id="YkN-Lg-OCC"/>
                         <outlet property="forwordButton" destination="EiR-nQ-Sbe" id="J3v-6y-tES"/>
                         <outlet property="heartButton" destination="gRk-dI-Ct5" id="Vyk-1F-Azh"/>
@@ -188,6 +202,11 @@
             <point key="canvasLocation" x="-424.63768115942031" y="7.3660714285714279"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="X23-Yy-LjV">
+            <size key="intrinsicContentSize" width="61.5" height="36"/>
+        </designable>
+    </designables>
     <resources>
         <image name="backward.fill" catalog="system" width="128" height="79"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>

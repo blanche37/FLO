@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 import MarqueeLabel
+import Lottie
 
 class ViewController: UIViewController {
     @IBOutlet weak var albumLabel: UILabel!
@@ -23,11 +24,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var repeatButton: UIButton!
     @IBOutlet weak var heartButton: UIButton!
     @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var animationView: AnimationView!
     
     var viewModel: ViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        animationView.contentMode = .scaleAspectFill
+        animationView.loopMode = .playOnce
+        animationView.animationSpeed = 0.5
         
         self.progressSlider.addTarget(self, action: #selector(valueChanged), for: .valueChanged)
         MusicPlayer.shared.addTimeObserver(slider: progressSlider)
@@ -100,6 +105,15 @@ class ViewController: UIViewController {
     
     @IBAction func touchUpHeartButton(_ sender: UIButton) {
         if heartButton.imageView?.image == UIImage(systemName: "suit.heart") {
+            animationView.isHidden = false
+            animationView.play { [weak self] _ in
+                guard let self = self else {
+                    return
+                }
+                
+                self.animationView.isHidden = true
+            }
+            
             heartButton.setImage(UIImage(systemName: "suit.heart.fill"), for: .normal)
         } else {
             heartButton.setImage(UIImage(systemName: "suit.heart"), for: .normal)
