@@ -16,9 +16,9 @@
 		432C0D7827DBC6F20024A667 /* FLOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D7727DBC6F20024A667 /* FLOTests.swift */; };
 		432C0D8227DBC6F20024A667 /* FLOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D8127DBC6F20024A667 /* FLOUITests.swift */; };
 		432C0D8427DBC6F20024A667 /* FLOUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D8327DBC6F20024A667 /* FLOUITestsLaunchTests.swift */; };
-		432C0D9127DBCEAF0024A667 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9027DBCEAF0024A667 /* Music.swift */; };
 		432C0D9927DBDD2F0024A667 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9827DBDD2F0024A667 /* Repository.swift */; };
 		432C0D9B27DBE4FA0024A667 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9A27DBE4FA0024A667 /* Service.swift */; };
+		4336E66227F17B6E00F71EA8 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336E66127F17B6E00F71EA8 /* Music.swift */; };
 		438FBA7727E1BFC7006989E7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FBA7627E1BFC7006989E7 /* ViewModel.swift */; };
 		438FBA7A27E1ED6D006989E7 /* MarqueeLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 438FBA7927E1ED6D006989E7 /* MarqueeLabel */; };
 		438FBA7C27E2429D006989E7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FBA7B27E2429D006989E7 /* Observable.swift */; };
@@ -57,9 +57,9 @@
 		432C0D7D27DBC6F20024A667 /* FLOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		432C0D8127DBC6F20024A667 /* FLOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLOUITests.swift; sourceTree = "<group>"; };
 		432C0D8327DBC6F20024A667 /* FLOUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLOUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		432C0D9027DBCEAF0024A667 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		432C0D9827DBDD2F0024A667 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		432C0D9A27DBE4FA0024A667 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		4336E66127F17B6E00F71EA8 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Music.swift; path = FLO/Service/Music.swift; sourceTree = SOURCE_ROOT; };
 		438FBA7627E1BFC7006989E7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		438FBA7B27E2429D006989E7 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		438FBA7D27E25727006989E7 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
@@ -96,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				432C0D5F27DBC6F10024A667 /* FLO */,
-				439690D527DF2CDF001A8626 /* Router */,
-				432C0D9727DBDB990024A667 /* FLOService */,
 				432C0D7627DBC6F20024A667 /* FLOTests */,
 				432C0D8027DBC6F20024A667 /* FLOUITests */,
 				432C0D5E27DBC6F10024A667 /* Products */,
@@ -117,15 +115,14 @@
 		432C0D5F27DBC6F10024A667 /* FLO */ = {
 			isa = PBXGroup;
 			children = (
-				432C0D6027DBC6F10024A667 /* AppDelegate.swift */,
-				432C0D6227DBC6F10024A667 /* SceneDelegate.swift */,
-				432C0D6427DBC6F10024A667 /* ViewController.swift */,
-				438FBA7D27E25727006989E7 /* MusicPlayer.swift */,
-				438FBA7627E1BFC7006989E7 /* ViewModel.swift */,
-				438FBA7B27E2429D006989E7 /* Observable.swift */,
-				432C0D6627DBC6F10024A667 /* Main.storyboard */,
+				4336E65F27F17AAA00F71EA8 /* App */,
+				4336E65E27F17AA000F71EA8 /* View */,
+				4336E65D27F17A9500F71EA8 /* ViewModel */,
+				439690D527DF2CDF001A8626 /* Router */,
+				432C0D9727DBDB990024A667 /* Service */,
+				4336E65B27F17A2C00F71EA8 /* Repository */,
+				4336E66027F17B4000F71EA8 /* Model */,
 				432C0D6927DBC6F20024A667 /* Assets.xcassets */,
-				432C0D6B27DBC6F20024A667 /* LaunchScreen.storyboard */,
 				432C0D6E27DBC6F20024A667 /* Info.plist */,
 			);
 			path = FLO;
@@ -148,14 +145,57 @@
 			path = FLOUITests;
 			sourceTree = "<group>";
 		};
-		432C0D9727DBDB990024A667 /* FLOService */ = {
+		432C0D9727DBDB990024A667 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				432C0D9027DBCEAF0024A667 /* Music.swift */,
-				432C0D9827DBDD2F0024A667 /* Repository.swift */,
 				432C0D9A27DBE4FA0024A667 /* Service.swift */,
 			);
-			path = FLOService;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4336E65B27F17A2C00F71EA8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				432C0D9827DBDD2F0024A667 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4336E65D27F17A9500F71EA8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				438FBA7D27E25727006989E7 /* MusicPlayer.swift */,
+				438FBA7627E1BFC7006989E7 /* ViewModel.swift */,
+				438FBA7B27E2429D006989E7 /* Observable.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4336E65E27F17AA000F71EA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				432C0D6427DBC6F10024A667 /* ViewController.swift */,
+				432C0D6627DBC6F10024A667 /* Main.storyboard */,
+				432C0D6B27DBC6F20024A667 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4336E65F27F17AAA00F71EA8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				432C0D6027DBC6F10024A667 /* AppDelegate.swift */,
+				432C0D6227DBC6F10024A667 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4336E66027F17B4000F71EA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4336E66127F17B6E00F71EA8 /* Music.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		439690D527DF2CDF001A8626 /* Router */ = {
@@ -308,9 +348,9 @@
 				432C0D6327DBC6F10024A667 /* SceneDelegate.swift in Sources */,
 				439690D727DF2D02001A8626 /* Router.swift in Sources */,
 				438FBA7C27E2429D006989E7 /* Observable.swift in Sources */,
-				432C0D9127DBCEAF0024A667 /* Music.swift in Sources */,
 				432C0D9927DBDD2F0024A667 /* Repository.swift in Sources */,
 				438FBA7727E1BFC7006989E7 /* ViewModel.swift in Sources */,
+				4336E66227F17B6E00F71EA8 /* Music.swift in Sources */,
 				438FBA7E27E25727006989E7 /* MusicPlayer.swift in Sources */,
 				432C0D9B27DBE4FA0024A667 /* Service.swift in Sources */,
 			);
