@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,71 +18,74 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sRS-T6-bkH">
-                                <rect key="frame" x="34.5" y="646.5" width="345" height="31"/>
+                                <rect key="frame" x="34.333333333333343" y="646" width="345.33333333333326" height="31"/>
+                                <color key="tintColor" name="MyRed"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X23-Yy-LjV" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                <rect key="frame" x="32" y="504.5" width="350" height="36"/>
+                                <rect key="frame" x="32" y="504.33333333333326" width="350" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="lug-YS-vi1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="MyBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kmI-yj-dQd">
-                                <rect key="frame" x="32" y="114.5" width="350" height="350"/>
+                                <rect key="frame" x="32" y="114.33333333333331" width="350" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="WwK-pP-Kay"/>
                                     <constraint firstAttribute="height" constant="350" id="oUK-8D-hYz"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIt-uk-Ieq">
-                                <rect key="frame" x="182.5" y="545.5" width="49" height="20.5"/>
+                                <rect key="frame" x="182.66666666666666" y="545.33333333333337" width="49" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="MyGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="252" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-6t-asO">
-                                <rect key="frame" x="47.5" y="681.5" width="319.5" height="20.5"/>
+                                <rect key="frame" x="47.333333333333343" y="681" width="319.66666666666663" height="20.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7R-pw-EaL">
-                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="35.666666666666664" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="MyBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxx-7l-10Q">
-                                        <rect key="frame" x="287.5" y="0.0" width="32" height="20.5"/>
+                                        <rect key="frame" x="287.66666666666669" y="0.0" width="32" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="MyBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4d8-3W-t7c">
-                                <rect key="frame" x="182.5" y="64" width="49" height="20.5"/>
+                                <rect key="frame" x="182.66666666666666" y="64" width="49" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="MyBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lyrlcs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEv-jg-4HI">
-                                <rect key="frame" x="187" y="596" width="40.5" height="20.5"/>
+                                <rect key="frame" x="187" y="595.66666666666663" width="40.333333333333343" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="MyBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2b9-ON-8x5">
-                                <rect key="frame" x="27.5" y="733" width="359" height="49.5"/>
+                                <rect key="frame" x="27.666666666666657" y="732.33333333333337" width="358.66666666666674" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiR-nQ-Sbe">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="63.666666666666664" height="50"/>
+                                        <color key="tintColor" name="MyRed"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="speaker.fill" catalog="system" title=" ">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gf-q6-t88">
-                                        <rect key="frame" x="74" y="0.0" width="63.5" height="49.5"/>
+                                        <rect key="frame" x="73.666666666666657" y="0.0" width="63.666666666666657" height="50"/>
+                                        <color key="tintColor" name="MyRed"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system" title=" ">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
@@ -92,7 +95,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBc-82-KIF">
-                                        <rect key="frame" x="147.5" y="0.0" width="64" height="49.5"/>
+                                        <rect key="frame" x="147.33333333333334" y="0.0" width="64" height="50"/>
+                                        <color key="tintColor" name="MyRed"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title="">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
@@ -102,7 +106,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aun-1P-QEh">
-                                        <rect key="frame" x="221.5" y="0.0" width="63.5" height="49.5"/>
+                                        <rect key="frame" x="221.33333333333334" y="0.0" width="63.666666666666657" height="50"/>
+                                        <color key="tintColor" name="MyRed"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system" title=" ">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
@@ -112,7 +117,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eI1-a5-g3t">
-                                        <rect key="frame" x="295" y="0.0" width="64" height="49.5"/>
+                                        <rect key="frame" x="295" y="0.0" width="63.666666666666686" height="50"/>
+                                        <color key="tintColor" name="MyRed"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="repeat" catalog="system" title=" ">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
@@ -124,8 +130,8 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRk-dI-Ct5">
-                                <rect key="frame" x="335" y="54" width="59" height="38"/>
-                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <rect key="frame" x="335" y="54" width="59" height="37.666666666666657"/>
+                                <color key="tintColor" name="MyRed"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="suit.heart" catalog="system" title=" " titleAlignment="trailing">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
@@ -135,7 +141,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6y-oz-Fwq">
-                                <rect key="frame" x="20" y="54" width="48" height="31"/>
+                                <rect key="frame" x="19.999999999999996" y="54" width="47.666666666666657" height="31"/>
+                                <color key="tintColor" name="MyRed"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title=" "/>
                             </button>
@@ -152,7 +159,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="MyLightBlue"/>
                         <constraints>
                             <constraint firstItem="Y6y-oz-Fwq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2uk-TF-8nm"/>
                             <constraint firstItem="n7e-Xg-sTI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="51V-wY-FIU"/>
@@ -204,7 +211,7 @@
     </scenes>
     <designables>
         <designable name="X23-Yy-LjV">
-            <size key="intrinsicContentSize" width="61.5" height="36"/>
+            <size key="intrinsicContentSize" width="61.333333333333336" height="36"/>
         </designable>
     </designables>
     <resources>
@@ -215,11 +222,17 @@
         <image name="repeat" catalog="system" width="128" height="98"/>
         <image name="speaker.fill" catalog="system" width="128" height="128"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="MyBlack">
+            <color red="0.27450980392156865" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MyGray">
+            <color red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MyLightBlue">
+            <color red="0.90196078431372551" green="0.94117647058823528" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MyRed">
+            <color red="1" green="0.27450980392156865" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
