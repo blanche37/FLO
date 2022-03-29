@@ -20,11 +20,12 @@
 		432C0D9B27DBE4FA0024A667 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432C0D9A27DBE4FA0024A667 /* Service.swift */; };
 		4336E66227F17B6E00F71EA8 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336E66127F17B6E00F71EA8 /* Music.swift */; };
 		4336E66527F17C0500F71EA8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4336E66427F17C0500F71EA8 /* Lottie */; };
+		4336E69127F364E800F71EA8 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336E69027F364E800F71EA8 /* HapticManager.swift */; };
 		438FBA7727E1BFC7006989E7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FBA7627E1BFC7006989E7 /* ViewModel.swift */; };
 		438FBA7A27E1ED6D006989E7 /* MarqueeLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 438FBA7927E1ED6D006989E7 /* MarqueeLabel */; };
 		438FBA7C27E2429D006989E7 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FBA7B27E2429D006989E7 /* Observable.swift */; };
 		438FBA7E27E25727006989E7 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FBA7D27E25727006989E7 /* MusicPlayer.swift */; };
-		439690D727DF2D02001A8626 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439690D627DF2D02001A8626 /* Router.swift */; };
+		439690D727DF2D02001A8626 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439690D627DF2D02001A8626 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +62,11 @@
 		432C0D9827DBDD2F0024A667 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		432C0D9A27DBE4FA0024A667 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		4336E66127F17B6E00F71EA8 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Music.swift; path = FLO/Service/Music.swift; sourceTree = SOURCE_ROOT; };
+		4336E69027F364E800F71EA8 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		438FBA7627E1BFC7006989E7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		438FBA7B27E2429D006989E7 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		438FBA7D27E25727006989E7 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
-		439690D627DF2D02001A8626 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		439690D627DF2D02001A8626 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,7 @@
 				4336E65F27F17AAA00F71EA8 /* App */,
 				4336E65E27F17AA000F71EA8 /* View */,
 				4336E65D27F17A9500F71EA8 /* ViewModel */,
-				439690D527DF2CDF001A8626 /* Router */,
+				439690D527DF2CDF001A8626 /* Manager */,
 				432C0D9727DBDB990024A667 /* Service */,
 				4336E65B27F17A2C00F71EA8 /* Repository */,
 				4336E66027F17B4000F71EA8 /* Model */,
@@ -200,12 +202,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		439690D527DF2CDF001A8626 /* Router */ = {
+		439690D527DF2CDF001A8626 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				439690D627DF2D02001A8626 /* Router.swift */,
+				439690D627DF2D02001A8626 /* NetworkManager.swift */,
+				4336E69027F364E800F71EA8 /* HapticManager.swift */,
 			);
-			path = Router;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,11 +353,12 @@
 				432C0D6527DBC6F10024A667 /* ViewController.swift in Sources */,
 				432C0D6127DBC6F10024A667 /* AppDelegate.swift in Sources */,
 				432C0D6327DBC6F10024A667 /* SceneDelegate.swift in Sources */,
-				439690D727DF2D02001A8626 /* Router.swift in Sources */,
+				439690D727DF2D02001A8626 /* NetworkManager.swift in Sources */,
 				438FBA7C27E2429D006989E7 /* Observable.swift in Sources */,
 				432C0D9927DBDD2F0024A667 /* Repository.swift in Sources */,
 				438FBA7727E1BFC7006989E7 /* ViewModel.swift in Sources */,
 				4336E66227F17B6E00F71EA8 /* Music.swift in Sources */,
+				4336E69127F364E800F71EA8 /* HapticManager.swift in Sources */,
 				438FBA7E27E25727006989E7 /* MusicPlayer.swift in Sources */,
 				432C0D9B27DBE4FA0024A667 /* Service.swift in Sources */,
 			);

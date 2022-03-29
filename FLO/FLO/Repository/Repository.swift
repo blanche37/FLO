@@ -21,7 +21,7 @@ class NetworkRepository: Repository {
             return
         }
         
-        Router.shared.request(url: url) { data in
+        NetworkManager.shared.request(url: url) { data in
             let music = self.convert(data)
             completion(music)
         }

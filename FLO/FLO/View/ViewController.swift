@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var animationView: AnimationView!
     
     var viewModel: ViewModel!
+    var hapticManager = HapticManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +68,7 @@ class ViewController: UIViewController {
                 self.durationLabel.text = self.viewModel.getTime(from: music.duration)
                 self.progressSlider.maximumValue = Float(music.duration)
                 MusicPlayer.shared.player.replaceCurrentItem(with: AVPlayerItem(url: URL(string: music.file)!))
-                Router.shared.request(url: URL(string: music.image)!, completion: { [weak self] data in
+                NetworkManager.shared.request(url: URL(string: music.image)!, completion: { [weak self] data in
                     guard let self = self else {
                         return
                     }
@@ -104,6 +105,7 @@ class ViewController: UIViewController {
     
     @IBAction func touchUpHeartButton(_ sender: UIButton) {
         if heartButton.imageView?.image == UIImage(systemName: "suit.heart") {
+            hapticManager?.playSlice()
             animationView.isHidden = false
             animationView.play { [weak self] _ in
                 guard let self = self else {

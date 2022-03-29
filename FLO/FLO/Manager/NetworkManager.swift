@@ -12,8 +12,8 @@ protocol NetworkRouter {
     func cancel()
 }
 
-class Router: NetworkRouter {
-    static let shared = Router()
+class NetworkManager: NetworkRouter {
+    static let shared = NetworkManager()
     
     private var task: URLSessionTask?
     

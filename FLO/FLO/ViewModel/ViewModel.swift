@@ -34,7 +34,7 @@ class FLOViewModel: ViewModel {
     }
                 
     func requestMusic(url: URL, completion: @escaping (Observable<Music>) -> ()) {
-        Router.shared.request(url: url) { data in
+        NetworkManager.shared.request(url: url) { data in
             do {
                 let music = try JSONDecoder().decode(Music.self, from: data)
                 completion(Observable<Music>(music))

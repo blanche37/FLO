@@ -10,7 +10,6 @@ import AVFoundation
 
 class MusicPlayer {
     static let shared = MusicPlayer()
-    
     var player = AVPlayer()
     var isPlaying = false
     private var timeObserverToken: Any?
