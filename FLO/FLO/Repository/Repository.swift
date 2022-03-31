@@ -12,7 +12,7 @@ protocol Repository {
     // TODO: - create, update, delete
 }
 
-class NetworkRepository: Repository {
+final class NetworkRepository: Repository {
     
     private let baseURL = URL(string: "https://grepp-programmers-challenges.s3.ap-northeast-2.amazonaws.com/2020-flo/song.json")
     

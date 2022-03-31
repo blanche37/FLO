@@ -11,7 +11,7 @@ protocol Service {
     func read(completion: @escaping (Music) -> ())
 }
 
-class FLOService: Service {
+final class FLOService: Service {
     private var repository: Repository!
     
     func read(completion: @escaping (Music) -> ()) {

@@ -10,7 +10,7 @@ import AVFoundation
 import MarqueeLabel
 import Lottie
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     @IBOutlet weak var albumLabel: UILabel!
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var musicTitleLabel: MarqueeLabel!

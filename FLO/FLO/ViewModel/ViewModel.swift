@@ -16,7 +16,7 @@ protocol ViewModel {
     func getTime(from duration: Int) -> String
 }
 
-class FLOViewModel: ViewModel {
+final class FLOViewModel: ViewModel {
     private var service: Service!
     private var music = Observable<Music>(Music(singer: "", album: "", title: "", duration: 0, image: "", file: "", lyrics: ""))
     

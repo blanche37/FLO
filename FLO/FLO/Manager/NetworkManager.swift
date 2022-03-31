@@ -12,7 +12,7 @@ protocol NetworkRouter {
     func cancel()
 }
 
-class NetworkManager: NetworkRouter {
+final class NetworkManager: NetworkRouter {
     static let shared = NetworkManager()
     
     private var task: URLSessionTask?

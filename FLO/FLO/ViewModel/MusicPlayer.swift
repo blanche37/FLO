@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class MusicPlayer {
+final class MusicPlayer {
     static let shared = MusicPlayer()
     var player = AVPlayer()
     var isPlaying = false
